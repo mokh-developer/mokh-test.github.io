@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: #2b3647;
+            height: 300px;
+            width: 70%;
+            margin: 100px auto;
+            border-radius: 20px 100px;
+            transition:  border-radius 5s;
+        }
+        .main:hover{
+           border-radius: 100px 20px;
+        }
+        .btn{
+            background-color: #ffbb00;
+            color: #2b3647;
+            padding: 5px 15px;
+            font-weight: 900;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px;
+        }
+        .container{
+            width: 80%;
+            margin: 15px auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .input{
+            padding: 10px;
+            border: none;
+            border-radius: 15px;
+            margin-top: 10px;
+            width: 80%;
+            text-align: center;
+        }
+        .btn-submit{
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <button class="btn" onclick="turnOn()" >Trun On</button>
+            <img id="bulb" src="img/pic_bulboff.gif" alt="pic_bullboff">
+            <button class="btn" onclick="turnOff()">Trun Off</button>
+        </div>
+  
+    </div>
+
+    <script>
+      let btnOn =  document.getElementById("btnOn");
+      let btnOff = document.getElementById("btnOff");
+         function turnOn(){
+            bulb.src='img/pic_bulbon.gif';
+        }
+        function turnOff(){
+            bulb.src='img/pic_bulboff.gif';
+        }
+
+       function changeStyle(id){
+        id.style.backgroundColor = "yellow";
+        id.style.padding = "12px";
+       }
+    </script>
+</body>
+</html>
