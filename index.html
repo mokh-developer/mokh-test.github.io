@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @font-face {
+            font-family: 'vazir';
+            src: url(fonts/Vazir-Medium.ttf) format('truetype'),
+            url(fonts/Vazir-Medium.woff) format('woff'),
+            url(fonts/Vazir-Medium.woff2) format('woff2');
+        }
         body{
-            background-color: #daebf7;
+            font-family: 'vazir';
+        }
+        h2, h3{
+            color: #d2ab67;
         }
         .main{
             background-color: #2b3647;
             width: 70%;
-            padding: 15px;
             margin: 100px auto;
-            border-radius: 20px 100px;
+            padding: 15px;
+            border-radius: 20px 80px;
             transition:  border-radius 5s;
         }
         .main:hover{
-           border-radius: 100px 20px;
+           border-radius: 80px 20px;
         }
         .btn{
             background-color: #ffbb00;
@@ -27,6 +36,7 @@
             cursor: pointer;
             border: none;
             border-radius: 20px;
+            font-family: 'vazir';
         }
         .container{
             width: 80%;
@@ -52,10 +62,10 @@
 <body>
     <div class="main">
         <div class="container">
-            <h2>You can turn on and trurn off the bulb!</h2>
-            <button class="btn" onclick="turnOn()" >Trun On</button>
+            <h2>شما می توانید لامپ را روشن و خاموش کنید</h2>
+            <button class="btn" onclick="turnOn()" >روشن</button>
             <img id="bulb" src="img/pic_bulboff.gif" alt="pic_bullboff">
-            <button class="btn" onclick="turnOff()">Trun Off</button>
+            <button class="btn" onclick="turnOff()">خاموش</button>
         </div>
   
     </div>
