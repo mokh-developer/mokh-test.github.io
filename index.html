@@ -60,30 +60,16 @@
 
 </head>
 <body>
-    <div class="main">
+    <div class="main" id="main">
         <div class="container">
-            <h2>شما می توانید لامپ را روشن و خاموش کنید</h2>
-            <button class="btn" onclick="turnOn()" >روشن</button>
+            <h2 id="title">شما می توانید لامپ را روشن و خاموش کنید</h2>
+            <button id="btnOn" class="btn" onclick="turnOn()" >روشن</button>
             <img id="bulb" src="img/pic_bulboff.gif" alt="pic_bullboff">
-            <button class="btn" onclick="turnOff()">خاموش</button>
+            <button id="btnOff" class="btn" onclick="turnOff()">خاموش</button>
         </div>
   
     </div>
 
-    <script>
-      let btnOn =  document.getElementById("btnOn");
-      let btnOff = document.getElementById("btnOff");
-         function turnOn(){
-            bulb.src='img/pic_bulbon.gif';
-        }
-        function turnOff(){
-            bulb.src='img/pic_bulboff.gif';
-        }
-
-       function changeStyle(id){
-        id.style.backgroundColor = "yellow";
-        id.style.padding = "12px";
-       }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
